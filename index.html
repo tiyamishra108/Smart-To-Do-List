@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Noctelle</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- WELCOME SCREEN -->
+  <div class="welcome-screen" id="welcomeScreen">
+    <h1 class="brand">Noctelle</h1>
+    <button id="startBtn">Get Started</button>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div class="dashboard hidden" id="dashboard">
+
+    <!-- LEFT COLUMN -->
+    <div class="left-column">
+      <div class="calendar-card">
+        <h2 id="greeting"></h2>
+        <h3 id="monthTitle"></h3>
+        <div id="calendar" class="calendar"></div>
+      </div>
+
+      <div class="progress-card">
+        <div class="progress-container">
+          <svg class="progress-ring" width="110" height="110">
+            <circle class="progress-bg" cx="55" cy="55" r="45"></circle>
+            <circle class="progress-circle" cx="55" cy="55" r="45"></circle>
+          </svg>
+          <div class="progress-text" id="progressText">0%</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right-column">
+
+      <h2 id="greetingRight"></h2>
+
+      <h2>Tasks</h2>
+
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Add a task..." />
+        <button id="addTask">Add</button>
+      </div>
+
+      <ul id="taskList"></ul>
+
+      <div class="motivation" id="motivationNote"></div>
+
+    </div>
+
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
